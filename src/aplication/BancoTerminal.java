@@ -29,13 +29,13 @@ public class BancoTerminal {
         
         System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo %.2f já está disponível para saque.%n", primeiraConta.getNome(), primeiraConta.getAgencia(), primeiraConta.getNumero(), primeiraConta.getSaldo());
 
+        primeiraConta.deposito(200);
+       
         //Bom mesmo que nesse desafio não tenha pedido eu fiz um metodo que executa um saque que sera mostra a seguir
 
-        /* 
-        aqui está o como executar o saque
         primeiraConta.saque(200);
-        System.out.println(primeiraConta.getSaldo());
-        */
+        
+        
 
         //Esse pequeno trecho de código a cima  que está comentado executa um saque, esse metodo de saque foi feito para 
         //que o valor a ser sacado respeite o valor da conta do usuário se por acaso o saque feito for maior que o valor que tem na conta aparecera a mensagem saldo insuficiente
